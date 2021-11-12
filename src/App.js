@@ -53,7 +53,7 @@ class App extends React.Component {
       <strong>Enter website URL:</strong><br />
       <form onSubmit={this.handleSubmit}>
       <input value={this.state.value} onChange={this.handleChange} className='urlInput' type='url' />
-      <input type='submit' className='urlSubmit' value='Can I please see the source? 🥺' />
+      <input type='submit' className='urlSubmit' value='Can I please see the source?' />
       </form>
       </p>
       <pre className='source'><code id="sourceCode">{this.state.code}</code></pre>
