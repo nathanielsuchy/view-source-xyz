@@ -20,7 +20,7 @@ class App extends React.Component {
   }
 
   handleSubmit(event) {
-    fetch(this.state.value)
+    fetch(`https://cors-anywhere.herokuapp.com/${this.state.value}`)
     .then((resp) => resp.text())
     .then((text) => {
       this.setState({code: text})
@@ -44,9 +44,11 @@ class App extends React.Component {
       <br /><br />
       Remember kids, ask your parents for permission before going online!
       <br /><br />
-      This website requires you to install <a href="https://chrome.google.com/webstore/detail/cross-domain-cors/mjhpgnbimicffchbodmgfnemoghjakai" style={{
+      {/* This website requires you to install <a href="https://chrome.google.com/webstore/detail/cross-domain-cors/mjhpgnbimicffchbodmgfnemoghjakai" style={{
         color: 'white',
-      }}>Chrome Extension</a> to bypass CORS Restrictions. We are working on a better bypass in the near future.
+      }}>Chrome Extension</a> to bypass CORS Restrictions. We are working on a better bypass in the near future. */}
+
+      This website requires you to opt-in at <a href="https://cors-anywhere.herokuapp.com/https://www.example.com/"></a> to bypass CORS Restrictions. We are working on an opt-inless solution in the near future.
       <br /><br />
       <strong>Enter website URL:</strong><br />
       <form onSubmit={this.handleSubmit}>
