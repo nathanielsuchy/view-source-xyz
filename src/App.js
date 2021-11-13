@@ -40,7 +40,7 @@ class App extends React.Component {
   render() {
     return(<div className="container">
     <h1>View Source Kids Edition</h1>
-    <p>Google Chrome now allows ADMINISTATORS to block view-source with Enterprise Policies and that's mean <span role="img" aria-label="emoji">😭</span> so I fixed the bug <span role="img" aria-label="emoji">😼</span>
+    <p>Google Chrome now allows ADMINISTATORS to block view-source with Enterprise Policies and that's mean :( so I fixed the bug ;)
       <br /><br />
       Remember kids, ask your parents for permission before going online!
       <br /><br />
