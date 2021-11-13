@@ -48,7 +48,7 @@ class App extends React.Component {
         color: 'white',
       }}>Chrome Extension</a> to bypass CORS Restrictions. We are working on a better bypass in the near future. */}
 
-      This website requires you to opt-in at <a href="https://cors-anywhere.herokuapp.com/https://www.example.com/"></a> to bypass CORS Restrictions. We are working on an opt-inless solution in the near future.
+      This website requires you to opt-in at <a href="https://cors-anywhere.herokuapp.com/https://www.example.com/">https://cors-anywhere.herokuapp.com/https://www.example.com/</a> to bypass CORS Restrictions. We are working on an opt-inless solution in the near future.
       <br /><br />
       <strong>Enter website URL:</strong><br />
       <form onSubmit={this.handleSubmit}>
